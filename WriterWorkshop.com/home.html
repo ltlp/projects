@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WriterWorkshop</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<style>
+		div.welcome {
+			position: relative;
+			text-align: center;
+			width: inherit;
+		}
+
+		.welcome img {
+			height: 400px;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.center {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+
+		a.about {
+			color: #0489A8;
+		}
+
+		a.continue {
+			color: #40C5E5; 
+		}
+
+		a.continue:hover {
+			color: #FDB615;
+		}
+
+		a.submit {
+			color: #000000;
+		}
+
+		a.submit:hover {
+			color: #ffffff;
+		}
+
+		.about li {
+			line-height: 2;
+			padding: 0px;
+		}
+
+		li a.about { 
+			color: #40C5E5;
+			font-family: inherit;
+			font-size: inherit;
+			display: inline; 
+			padding: 0px;
+		}
+
+		li a.about:hover {
+			color: #FDB615;
+		}
+
+		.welcome h1 {
+			background: rgba(64, 196, 229, 0.6);
+			color: #ffffff;
+			padding: 15px;
+			margin: auto;
+			text-align: center;
+			width: 100%;
+			font-size: 3em;
+		}
+
+		h2.start {
+			font-family: 'Josefin Slab', serif;
+			text-align: center;
+		}
+
+		ul.about {
+			padding: 0px 0px 25px 0px;
+		}
+
+		div.gridContainer {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-row-end: 2;
+		}
+
+		div.noGray {
+			background-color: #ffffff;
+			padding: none;
+			margin: auto;
+		}
+
+		div.LeftDiv {
+			background-color: #707071;
+			padding: 0px 20px 5px 20px;
+			margin: -5px 25px 15px 0px;
+		}
+
+		.LeftDiv h2 {
+			text-align: center;
+			background-color: #ffffff;
+			padding: 10px;
+		}
+
+		.LeftDiv h3 {
+			color: #0489A8;
+			margin-bottom: -20px;
+		}
+
+		div.topPosts1, div.topPosts2, div.topPosts3 {
+			background-color: #ffffff;
+			margin: 15px 0px 15px 0px;
+		}
+
+		.topPosts1 h3, p {
+			padding: 7px;
+		}
+
+		.topPosts2 h3, p {
+			padding: 7px;
+		}
+
+		.topPosts3 h3, p {
+			padding: 7px;
+		}
+
+		div.RightDiv {
+			background-color: #707071;
+			padding: 15px 20px 5px 20px;
+			margin: -5px 0px 15px 25px;
+		}
+
+		.RightDiv textarea {
+			width: 98%;
+			outline-color: #40C5E5;
+		}
+
+		.RightDiv h2 {
+			text-align: center;
+			background-color: #ffffff;
+			padding: 10px;
+		}
+
+		.RightDiv button {
+			display: block;
+			margin: 3px auto 3px auto;
+			border: 0.5px solid #ffffff;
+			border-radius: 5px;
+			color: #000000;
+			background-color: #FDB615;
+			font-size: 0.8em;
+			line-height: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="parent">
+				<div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
+				<div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
+				<div class="div3"><ul><li><a href="home.html" class='global'>Home</a></li></ul></div>
+				<div class="div4"><ul><li><a href="aboutus.html" class="global">About Us</a></li></ul></div>
+				<div class="div5"><ul><li><a href="forum.html" class='global'>Forum</a></li></ul></div>
+				<div class="div6"><ul><li><a href="works.html" class='global'>Works</a></li></ul></div>
+				<div class="div7"><ul><li><a href="myaccount.html" class='global'>My Account</a></li></ul></div>
+				<div class="div8"><input type="text" placeholder="Search" class="search"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class='welcome'>
+			<img src="homebackground.jpg">
+			<div class='center'>
+				<h1>Welcome to Writer Workshop!</h1>
+				<div class='backgroundColor'>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2 class="start">Getting Started...</h2>
+			<p>Hello! Welcome to WriterWorkshop.com.  Here are a few tips for getting started:</p>
+			<ul class="about">
+				<li>~ You can browse user works and forum posts by viewing our <a href="works.html" class='about'>Works</a> section and our <a href="forum.html" class="about">Forum</a> section.</li>
+				<li>~ If you would like to post your own content, create an account by clicking our <a href="login.html" class="about">Login</a> button at the top right of the screen.</li>
+				<li>~ To submit a post, go to the <a href="newworks.html" class="about">New Works</a> page and paste your own story in a submission box.</li>
+				<li>~ You can edit your profile and view your credibility score by clicking on <a href="myaccount.html" class="about">My Account</a>.</li>
+				<li>~ If you would like to learn more about us, visit our <a href="aboutus.html" class="about">About Us</a> page.</li>
+			</ul>
+		</div>
+		<div class="gridContainer">
+			<div class="noGray"><h2>TOP POSTS</h2></div>
+			<div class="noGray"><h2>WRITE YOUR STORY HERE</h2></div>
+			<div class="LeftDiv">
+				<div class="topPosts1">
+					<h3>The Mice</h3>
+					<p>Mice live in our walls but do not trouble our kitchen. We are pleased but cannot understand why they do not come into our kitchen where we have traps set, as they come into the kitchens of our neighbors. Although we are pleased, we are also upset... <a href="
+					usersubmissionMICE.html" class="continue">(Continue Reading)</a>
+					</p>
+				</div>
+				<div class="topPosts2">
+					<h3>Broken Hearts Poem</h3>
+					<p>Alas, I stand small as the world crashes down,<br>
+					I cry with anguish as my heart bleeds red,<br>
+					Distance is pain and in darkness I drown,<br>
+					There is so much sorrow, it can't all be said... <a href="usersubmissionHEARTS.html" class="continue">(Continue Reading)</a>
+					</p>
+				</div>
+				<div class="topPosts3">
+					<h3>Song for Mom</h3>
+					<p>[Verse 1]<br>
+					Lovely is she, who makes muffins at 9 /<br>
+					My love for her grows like a vine /<br>
+					Happiness unfolds with my mom every time /... <a href="usersubmissionMOM.html" class="continue">(Continue Reading)</a>
+					</p>
+				</div>
+			</div>
+			<div class="RightDiv">
+				<form>
+					<textarea rows="27">Start typing...</textarea>
+					<br>
+					<button><a href="login.html" class="submit">Submit</a></button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<fdiv class="fparent">
+			<fdiv class="fdiv1"><span>STAY CONNECTED</span></fdiv>
+			<fdiv class="fdiv2"><span>COMMITTED TO YOU</span></fdiv>
+			<fdiv class="fdiv3"><span>NAVIGATE</span></fdiv>
+			<fdiv class="fdiv4">Join the WriterWorkshop tip list to receive bi-weekly writing tips.</fdiv>
+			<fdiv class="fdiv5">WriterWorkshop is a proud member of the creative community and is dedicated to excellence not only in writing, but in life.</fdiv>
+			<fdiv class="fdiv6"><a href="works.html" class="foot">Works</a></fdiv>
+			<fdiv class="fdiv7"><a href="newworks.html" class="foot">New Work</a></fdiv>
+			<fdiv class="fdiv8"><a href="posthistory.html" class="foot">Credibility Score</a></fdiv>
+			<fdiv class="fdiv9"><a href=login.html class="foot">Login / Sign Up</a></fdiv>
+			<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
+			<fdiv class="fdiv11"><a href="aboutus.html" class="foot">LEARN MORE</a></fdiv>
+			<fdiv class="fdiv12"><a href="myaccount.html" class="foot">My Account</a></fdiv>
+			<fdiv class="fdiv13"><a href="forum.html" class="foot">Forum</a></fdiv>
+			<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios</fdiv>
+		</fdiv>
+	</footer>
+</body>
+</html>
