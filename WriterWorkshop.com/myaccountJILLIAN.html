@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WriterWorkshop - My Account</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<style>
+		a.submit {
+			color: #ffffff;
+		}
+
+		.profile h2 {
+			color: #ffffff;
+			background-color: rgba(0, 0, 0, 0.8);
+			text-align: center;
+			padding: 5px;
+			margin-top: 0px;
+		}
+
+		.background-image {
+			width: 100%;
+			object-fit: cover;
+			background-image: url('jillian_background.jpg')
+		}
+
+		.profile img {
+			display: block;
+			margin: auto;
+			object-fit: cover;
+			height: 300px;
+		}
+
+		.gridContainer2 {
+			display: grid;
+			grid-template-columns: 33.3% 33.3% 33.3%;
+			border-bottom: 1px solid #000000;
+		}
+
+		.gridContainer3 {
+			display: grid;
+			grid-template-columns: 33.3% 33.3% 33.3%;
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		.Lbutton button, .Rbutton button {
+			display: block;
+			padding: 6% 3% 6% 3%;
+			margin: 15% auto 15% auto;
+			border: 3px solid #444444;
+			border-radius: 5px;
+			color: #ffffff;
+			background-color: #0489A8;
+			font-size: 1em;
+			line-height: 20px;
+			transition-duration: 0.4s;			
+		}
+
+		.Lbutton button:hover, .Rbutton button:hover {
+			color: #ffffff;
+			background-color: #A020F0;
+		}
+
+		div.userInfo {
+			text-align: center;
+			margin-top: 5%;
+			margin-bottom: 50px;
+		}
+
+		span {
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="parent">
+				<div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
+				<div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
+				<div class="div3"><ul><li><a href="home.html" class='global'>Home</a></li></ul></div>
+				<div class="div4"><ul><li><a href="aboutus.html" class="global">About Us</a></li></ul></div>
+				<div class="div5"><ul><li><a href="forum.html" class='global'>Forum</a></li></ul></div>
+				<div class="div6"><ul><li><a href="works.html" class='global'>Works</a></li></ul></div>
+				<div class="div7"><ul><li><a href="myaccount.html" class='global'>My Account</a></li></ul></div>
+				<div class="div8"><input type="text" placeholder="Search" class="search"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="profile">
+			<div class="background-image">
+				<img src="jillian.jpg">
+				<h2>Jillian Jackson</h2>
+			</div>
+		</div>
+		<div class="gridContainer2">
+			<div class="Lbutton">
+				<button><a href="forgotpass.html" class="submit"><span>Change Password</span></a></button>
+			</div>
+			<div class="userInfo">
+				<p><span>Joined:</span> Oct 1, 2019</p>
+				<p><span>Works posted:</span> 1</p>
+				<p><span>Comments posted:</span> 70</p>
+				<p><span>Most recent post:</span> November 4, 2019</p>
+			</div>
+			<div class="Rbutton">
+				<button><a href="posthistoryJILLIAN.html" class="submit"><span>View User Posts</span></a></button>
+			</div>
+		</div>
+		<div class="gridContainer3">
+			<div class="img1">
+				<img src="https://storage.googleapis.com/zingchart-blog/zing-content/2017/02/Pie-Chart-2.png" height="300">
+				<h3>Ratio of Comments Marked Helpful</h3>
+			</div>
+			<div class="img2">
+				<img src="https://datavizproject.com/wp-content/uploads/2015/10/1-Line-Chart.png" height="300">
+				<h3>Activity over Time</h3>
+			</div>
+			<div class="img3">
+				<img src="https://www.statcrunch.com/grabimage.php?image_id=591222" height="300">
+				<h3>Favorite Genres</h3>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<fdiv class="fparent">
+			<fdiv class="fdiv1"><span>STAY CONNECTED</span></fdiv>
+			<fdiv class="fdiv2"><span>COMMITTED TO YOU</span></fdiv>
+			<fdiv class="fdiv3"><span>NAVIGATE</span></fdiv>
+			<fdiv class="fdiv4">Join the WriterWorkshop tip list to receive bi-weekly writing tips.</fdiv>
+			<fdiv class="fdiv5">WriterWorkshop is a proud member of the creative community and is dedicated to excellence not only in writing, but in life.</fdiv>
+			<fdiv class="fdiv6"><a href="works.html" class="foot">Works</a></fdiv>
+			<fdiv class="fdiv7"><a href="newworks.html" class="foot">New Work</a></fdiv>
+			<fdiv class="fdiv8"><a href="posthistory.html" class="foot">Credibility Score</a></fdiv>
+			<fdiv class="fdiv9"><a href=login.html class="foot">Login / Sign Up</a></fdiv>
+			<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
+			<fdiv class="fdiv11"><a href="aboutus.html" class="foot">LEARN MORE</a></fdiv>
+			<fdiv class="fdiv12"><a href="myaccount.html" class="foot">My Account</a></fdiv>
+			<fdiv class="fdiv13"><a href="forum.html" class="foot">Forum</a></fdiv>
+			<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios</fdiv>
+		</fdiv>
+	</footer>
+</body>
+</html>

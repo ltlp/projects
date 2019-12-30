@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WriterWorkshop - Works</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<script src="jQueryAssets/SpryDOMUtils.js"></script>
+	<script>function openGenre(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} </script>
+		<style>
+			/* Style the tab */
+			.tab {
+				overflow: hidden;
+				border: 1px solid #ccc;
+				background-color: #4089A8;
+			}
+
+			/* Style the buttons that are used to open the tab content */
+			.tab button {
+				background-color: inherit;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+				font-family: 'Roboto', sans-serif;
+				color: #ffffff;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+				background-color: #FDB615;
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+				background-color: #FDB615;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+				display: none;
+				padding: 6px 12px;
+				border: 1px solid #ccc;
+				border-top: none;
+			}
+
+			.tabcontent {
+				animation: fadeEffect 1s;
+				/* Fading effect takes 1 second */
+			}
+
+			/* Go from zero to full opacity */
+			@keyframes fadeEffect {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+
+			#myTable {
+				border-collapse: collapse;
+				/* Collapse borders */
+				width: 100%;
+				/* Full-width */
+				border: 1px solid #ddd;
+				/* Add a grey border */
+				font-size: 18px;
+				/* Increase font-size */
+			}
+
+			#myTable th, #myTable td {
+				text-align: left;
+				/* Left-align text */
+				padding: 12px;
+				/* Add padding */
+			}
+
+			#myTable tr {
+				/* Add a bottom border to all table rows */
+				border-bottom: 1px solid #ddd;
+			}
+
+			#myTable tr.header, #myTable tr:hover {
+				/* Add a blue background color to the table header and on hover */
+				background-color: #40C5E5;
+			}
+
+			.buttondiv {
+				margin-top: 24px;
+				text-align: center;
+				
+			}
+
+			.button.submit {
+				display: block;
+				margin: 3px auto 3px auto;
+				border: 0.5px solid #ffffff;
+				border-radius: 5px;
+				color: #000000;
+				background-color: #FDB615;
+				font-size: 1em;
+				line-height: 20px;
+			}
+
+			span {
+				font-weight: 700;
+				
+			}
+		</style>
+	</head>
+<body>
+<header>
+	<nav>
+		<div class="parent">
+			<div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
+			<div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
+			<div class="div3"><ul><li><a href="home.html" class='global'>Home</a></li></ul></div>
+			<div class="div4"><ul><li><a href="aboutus.html" class="global">About Us</a></li></ul></div>
+			<div class="div5"><ul><li><a href="forum.html" class='global'>Forum</a></li></ul></div>
+			<div class="div6"><ul><li><a href="works.html" class='global'>Works</a></li></ul></div>
+			<div class="div7"><ul><li><a href="myaccount.html" class='global'>My Account</a></li></ul></div>
+			<div class="div8"><input type="text" placeholder="Search" class="search"></div>
+		</div>
+	</nav>
+</header>
+	<main>
+		<div class="container">
+		<div class="category">			<div class="tab">
+			  <button class="tablinks" onclick="openGenre(event, 'horrordiv')">Horror</button>
+			<button class="tablinks" onclick="openGenre(event, 'fantasydiv')">Fantasy</button>
+			<button class="tablinks" onclick="openGenre(event, 'historicalfictiondiv')">Historical Fiction</button></div></div>
+			<div id="horrordiv" class="tabcontent">
+			  <h2>Horror</h2>
+<table id="myTable">
+  <tr class="header">
+    <th>Title</th>
+    <th>Author</th>
+	<th>Type</th>
+	<th>Date Posted</th>
+	<th>User Views</th>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionMICE.html">HOW TO GET BACK TO THE FOREST</a></td>
+    <td><span> by SOFIA SAMATAR</span></td>
+	<td>Prose</td>
+	<td>10/31/2019</td>
+	<td>109</td>
+	  
+  </tr>
+  <tr>
+    <td><a href="usersubmissionDOG.html">PATIENT ZERO</a></td>
+    <td><span>by TANANARIVE DUE</span></td>
+	<td>Prose</td>
+	<td>11/08/2019</td>
+	<td>246</td>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionMICE.html">A COLLAPSE OF HORSES</a></td>
+    <td><span> by BRIAN EVENSON</span></td>
+	<td>Prose</td>
+	<td>09/30/2019</td>
+	<td>674</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionDOG.html">The Raven</a></td>
+    <td><span> by Edgar Allen Poe</span></td>
+	<td>Poetry</td>
+	<td>01/29/1845</td>
+	<td>2,109</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionMICE.html">Omens</a></td>
+    <td><span> by Cecelia Llompart</span></td>
+	<td>Poetry</td>
+	<td>07/24/2019</td>
+	<td>223</td>
+  </tr>
+</table> 
+			</div>
+			<div id="fantasydiv" class="tabcontent">
+				<h2>Fantasy</h2>
+				<table id="myTable">
+  <tr class="header">
+    <th>Title</th>
+    <th>Author</th>
+	<th>Type</th>
+	<th>Date Posted</th>
+	<th>User Views</th>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionDOG.html">St. Lucy's Home for Girls Raised by Wolves</a></td>
+    <td><span> by Karen Russell</span></td>
+	<td>Prose</td>
+	<td>05/11/2019</td>
+	<td>55</td>
+	  
+  </tr>
+  <tr>
+    <td><a href="usersubmissionHEARTS.html">The City Born Great</a></td>
+    <td><span> by N.K. Jemisin</span></td>
+	<td>Prose</td>
+	<td>06/16/2019</td>
+	<td>709</td>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionDOG.html">The Truth Is a Cave in the Black Mountains</a></td>
+    <td><span> by Neil Gaiman</span></td>
+	<td>Prose</td>
+	<td>09/23/2019</td>
+	<td>1049</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionMOM.html">The Ballad Of The Harp Weaver</a></td>
+    <td><span> by Edna St. Vincent Millay</span></td>
+	<td>Poetry</td>
+	<td>03/29/2019</td>
+	<td>298</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionHEARTS.html">Paul Bunyan</a></td>
+    <td><span> by Shel Silverstein</span></td>
+	<td>Poetry</td>
+	<td>09/26/2019</td>
+	<td>432</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionMICE.html">Dreams</a></td>
+    <td><span> by Jane A Beresford</span></td>
+	<td>Poetry</td>
+	<td>10/16/2019</td>
+	<td>889</td>
+  </tr>
+</table> 
+			</div>
+			<div id="historicalfictiondiv" class="tabcontent">
+				<h2>Historical Fiction</h2>
+								<table id="myTable">
+  <tr class="header">
+    <th>Title</th>
+    <th>Author</th>
+	<th>Type</th>
+	<th>Date Posted</th>
+	<th>User Views</th>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionMOM.html">Greenhorns</a></td>
+    <td><span> by Richard Slotkin</span></td>
+	<td>Prose</td>
+	<td>09/17/2019</td>
+	<td>649</td>
+	  
+  </tr>
+  <tr>
+    <td><a href="usersubmissionDOG.html">Hard Ride</a></td>
+    <td><span> by Elmer Kelton</span></td>
+	<td>Prose</td>
+	<td>10/07/2019</td>
+	<td>543</td>
+  </tr>
+  <tr>
+    <td><a href="usersubmissionMICE.html">Scenes from the Heartland: Stories Based on Lithographs by Thomas Hart Benton</a></td>
+    <td><span> by Donna Baier Stein</span></td>
+	<td>Prose</td>
+	<td>11/04/2019</td>
+	<td>42</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionMOM.html">Pneumonic Poem to remember Henry the Eighth’s wives</a></td>
+    <td><span> by Sathyam-Drew</span></td>
+	<td>Poetry</td>
+	<td>08/13/2019</td>
+	<td>675</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionDOG.html">Holocaust</a></td>
+    <td><span> by angelo19</span></td>
+	<td>Poetry</td>
+	<td>11/10/2019</td>
+	<td>965</td>
+  </tr>
+	  <tr>
+    <td><a href="usersubmissionHEARTS.html">MOTHER AFRICA</a></td>
+    <td><span> by TAMBE MANSFIELD AGBOR</span></td>
+	<td>Poetry</td>
+	<td>09/18/2019</td>
+	<td>25</td>
+  </tr>
+</table>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<fdiv class="fparent">
+			<fdiv class="fdiv1"><span>STAY CONNECTED</span></fdiv>
+			<fdiv class="fdiv2"><span>COMMITTED TO YOU</span></fdiv>
+			<fdiv class="fdiv3"><span>NAVIGATE</span></fdiv>
+			<fdiv class="fdiv4">Join the WriterWorkshop tip list to receive bi-weekly writing tips.</fdiv>
+			<fdiv class="fdiv5">WriterWorkshop is a proud member of the creative community and is dedicated to excellence not only in writing, but in life.</fdiv>
+			<fdiv class="fdiv6"><a href="works.html" class="foot">Works</a></fdiv>
+			<fdiv class="fdiv7"><a href="newworks.html" class="foot">New Work</a></fdiv>
+			<fdiv class="fdiv8"><a href="posthistory.html" class="foot">Credibility Score</a></fdiv>
+			<fdiv class="fdiv9"><a href=login.html class="foot">Login / Sign Up</a></fdiv>
+			<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
+			<fdiv class="fdiv11"><a href="aboutus.html" class="foot">LEARN MORE</a></fdiv>
+			<fdiv class="fdiv12"><a href="myaccount.html" class="foot">My Account</a></fdiv>
+			<fdiv class="fdiv13"><a href="forum.html" class="foot">Forum</a></fdiv>
+			<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios</fdiv>
+		</fdiv>
+	</footer>
+</body>
+</html>

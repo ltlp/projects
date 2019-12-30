@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WriterWorkshop - Viewing Post</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
+	<link href="master.css" rel="stylesheet" type="text/css">
+	<style>
+		a.user {
+			color: #0489A8;
+		}
+
+		a.user:hover {
+			color: #FDB615;
+		}
+
+		a.submit {
+			color: #000000;
+		}
+
+		a.submit:hover {
+			color: #ffffff;
+		}
+
+		div.gridContainer {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			margin: 0px 0px 0px 15px;
+		}
+
+		div.post {
+			background-color: #f5f5f5;
+			border: 2px solid #000000;
+			padding: 20px 30px 20px 30px;
+			margin: 40px 0px 15px 0px;
+		}
+
+		.post h4 {
+			font-family: 'Roboto';
+			font-size: 0.8em;
+		}
+
+		div.comments {
+			background-color: #dbdbdb;
+			border: 2px solid #707071;
+			border-bottom: none;
+			margin: 5px 0px 45px 0px;
+			padding: 10px 25px 15px 25px;
+		}
+
+		div.comment1, div.comment2, div.comment3 {
+			margin: -5px 0px -10px 0px;
+		}
+
+		div.content {
+			background-color: #ffffff;
+			border: 1px solid #000000;
+			border-radius: 10px;
+			padding: 0px 5px 0px 5px;
+			margin: 20px 0px 20px 0px;
+			line-height: 0.5;
+		}
+
+		div.user {
+			margin-top: -30px;
+			margin-left: 10px;
+		}
+
+		.user p {
+			font-family: 'Roboto';
+			font-size: 0.8em;
+		}
+
+		div.credibility {
+			margin-top: -30px;
+			margin-left: 40%;
+		}
+
+		.credibility p {
+			font-family: 'Roboto';
+			font-size: 0.8em;
+		}
+
+		div.submitComment {
+			background-color: #dbdbdb;
+			border: 2px solid #707071;
+			border-top: none;
+			margin: -50px 0px 45px 0px;
+			padding: 15px 25px 15px 25px;
+		}
+
+		.submitComment h4 {
+			text-align: center;
+			font-size: 1em;
+			font-family: 'Roboto';
+			background-color: #9e9e9e;
+			border: 1px solid #707071;
+			padding: 5px;
+		}
+		 
+		.submitComment textarea {
+			margin-top: -15px;
+			width: 99.4%;
+			height: 45%;
+			outline-color: #40C5E5;
+		}
+
+		.submitComment button {
+			display: block;
+			margin: auto;
+			margin-top: 10px;
+			border: 0.5px solid #ffffff;
+			border-radius: 5px;
+			color: #000000;
+			background-color: #FDB615;
+			font-family: 'Roboto';
+			font-size: 0.8em;
+			font-weight: 400;
+			line-height: 2;
+		}
+
+		span {
+			font-weight: 700;
+		}
+	</style>
+		<script>
+		var cred1score = 45
+		var cred2score = 82
+		var cred3score = 76
+		
+		function updatecred(id, value, score){
+			percent = id+"percent"
+			if (id == "cred1") {
+				var credscore = cred1score
+			}
+			else if (id == "cred2") {
+				var credscore = cred2score
+			}
+			else if (id == "cred3") {
+				var credscore = cred3score
+			}
+			console.log(credscore)
+			if (value == "credible") {
+				document.getElementById(percent).innerHTML = credscore + 10
+			}
+			else if (value == "noncredible") {
+				document.getElementById(percent).innerHTML = credscore - 10
+			}
+			else if (value == "select") {
+				document.getElementById(percent).innerHTML = credscore
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="parent">
+				<div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
+				<div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
+				<div class="div3"><ul><li><a href="home.html" class='global'>Home</a></li></ul></div>
+				<div class="div4"><ul><li><a href="aboutus.html" class="global">About Us</a></li></ul></div>
+				<div class="div5"><ul><li><a href="forum.html" class='global'>Forum</a></li></ul></div>
+				<div class="div6"><ul><li><a href="works.html" class='global'>Works</a></li></ul></div>
+				<div class="div7"><ul><li><a href="myaccount.html" class='global'>My Account</a></li></ul></div>
+				<div class="div8"><input type="text" placeholder="Search" class="search"></div>
+			</div>
+		</nav>
+	</header>
+		<main>
+			<div class="post">
+				<h3>Broken Hearts Poem</h3>
+				<h4>Posted by <a href="myaccountOCTAVIO.html" class="user">Octavio Billie</a> on October 15, 2019</h4>
+				<p>Alas, I stand small as the world crashes down,<br>
+				I cry with anguish as my heart bleeds red,<br>
+				Distance is pain and in darkness I drown,<br>
+				There is so much sorrow, it can't all be said.<br>
+				<br>
+				The weather is stormy and cold,<br>
+				I cannot stand the depths of this night.<br>
+				Wishing for new instead of same old,<br>
+				But real change isn't worth the fight.
+				<br>
+				<br>
+				<br>
+				<i>This is what I have so far... what do you guys think?</i>
+				</p>
+			</div>
+			<div class="comments">
+				<div class="comment1">
+					<div class="content">
+						<p>So depressing :(</p>
+					</div>
+					<div class="gridContainer">
+						<div class="user">
+							<p>Posted by <a href="jimmyaccount.html" class="user">Jimmy Franklin</a> on October 16, 2019</p>
+						</div>
+						<div class="credibility">
+							<p><span id="cred1percent">45</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred1">
+									<option value="select">Vote</option>
+								  <option value="credible">Credible</option>
+								  <option value="noncredible">Not Credible</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="comment2">
+					<div class="content">
+						<p>Good start - I hope you expand this poem!</p>
+					</div>
+					<div class="gridContainer">
+						<div class="user">
+							<p>Posted by <a href="lydiaaccount.html" class="user">Lydia Davis</a> on October 18, 2019</p>
+						</div>
+						<div class="credibility">
+							<p><span id="cred2percent">82</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred2">
+									<option value="select">Vote</option>
+								  <option value="credible">Credible</option>
+								  <option value="noncredible">Not Credible</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="comment3">
+					<div class="content">
+						<p>Heartbreak sucks.</p>
+					</div>
+					<div class="gridContainer">
+						<div class="user">
+							<p>Posted by <a href="myaccountJILLIAN.html" class="user">Jillian Jackson</a> on October 23, 2019</p>
+						</div>
+						<div class="credibility">
+							<p><span id="cred3percent">76</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred3">
+									<option value="select">Vote</option>
+								  <option value="credible">Credible</option>
+								  <option value="noncredible">Not Credible</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="submitComment">
+					<h4>Submit a Comment</h4>
+					<form>
+						<textarea rows="10" cols="50">Type your comment here</textarea><br>
+						<button><a href="login.html" class="submit">Submit</a></button>									
+					</form>
+			</div>		
+		</main>
+	<footer>
+		<fdiv class="fparent">
+			<fdiv class="fdiv1"><span>STAY CONNECTED</span></fdiv>
+			<fdiv class="fdiv2"><span>COMMITTED TO YOU</span></fdiv>
+			<fdiv class="fdiv3"><span>NAVIGATE</span></fdiv>
+			<fdiv class="fdiv4">Join the WriterWorkshop tip list to receive bi-weekly writing tips.</fdiv>
+			<fdiv class="fdiv5">WriterWorkshop is a proud member of the creative community and is dedicated to excellence not only in writing, but in life.</fdiv>
+			<fdiv class="fdiv6"><a href="works.html" class="foot">Works</a></fdiv>
+			<fdiv class="fdiv7"><a href="newworks.html" class="foot">New Work</a></fdiv>
+			<fdiv class="fdiv8"><a href="posthistory.html" class="foot">Credibility Score</a></fdiv>
+			<fdiv class="fdiv9"><a href=login.html class="foot">Login / Sign Up</a></fdiv>
+			<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
+			<fdiv class="fdiv11"><a href="aboutus.html" class="foot">LEARN MORE</a></fdiv>
+			<fdiv class="fdiv12"><a href="myaccount.html" class="foot">My Account</a></fdiv>
+			<fdiv class="fdiv13"><a href="forum.html" class="foot">Forum</a></fdiv>
+			<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios</fdiv>
+		</fdiv>
+	</footer>
+</body>
+</html>
